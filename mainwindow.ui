@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>652</width>
+    <height>412</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QMdiArea" name="mdiArea">
+      <property name="viewMode">
+       <enum>QMdiArea::TabbedView</enum>
+      </property>
+      <property name="documentMode">
+       <bool>true</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>652</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menu_File"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>RightToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionClient"/>
+   <addaction name="separator"/>
+   <addaction name="actionProduct"/>
+   <addaction name="actionOrder"/>
+   <addaction name="actionServer"/>
+   <addaction name="actionQuit"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="Qrcapp.qrc">
+     <normaloff>:/image/quit.png</normaloff>:/image/quit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionClient">
+   <property name="icon">
+    <iconset resource="Qrcapp.qrc">
+     <normaloff>:/image/client.png</normaloff>:/image/client.png</iconset>
+   </property>
+   <property name="text">
+    <string>Client Info</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+1</string>
+   </property>
+  </action>
+  <action name="actionProduct">
+   <property name="icon">
+    <iconset resource="Qrcapp.qrc">
+     <normaloff>:/image/product.png</normaloff>:/image/product.png</iconset>
+   </property>
+   <property name="text">
+    <string>Product Info</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+2</string>
+   </property>
+  </action>
+  <action name="actionOrder">
+   <property name="icon">
+    <iconset resource="Qrcapp.qrc">
+     <normaloff>:/image/order.png</normaloff>:/image/order.png</iconset>
+   </property>
+   <property name="text">
+    <string>Order Info</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+3</string>
+   </property>
+  </action>
+  <action name="actionete">
+   <property name="text">
+    <string>ete</string>
+   </property>
+  </action>
+  <action name="actionchat">
+   <property name="text">
+    <string>chat</string>
+   </property>
+  </action>
+  <action name="actionServer">
+   <property name="icon">
+    <iconset resource="Qrcapp.qrc">
+     <normaloff>:/image/chat.png</normaloff>:/image/chat.png</iconset>
+   </property>
+   <property name="text">
+    <string>Server</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Qrcapp.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

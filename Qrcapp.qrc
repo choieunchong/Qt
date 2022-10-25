@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/bluepoint.png</file>
+        <file>image/greenpoint.png</file>
+        <file>image/redpoint.png</file>
+        <file>image/client.png</file>
+        <file>image/order.png</file>
+        <file>image/product.png</file>
+        <file>image/chat.png</file>
+        <file>image/quit.png</file>
+    </qresource>
+</RCC>
